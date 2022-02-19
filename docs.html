@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Norium Bot Documents</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+</head>
+<body>
+<section class="header">
+    <nav>
+        <a href=""><img src="images/Webp.net-resizeimage.png" alt=""></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="docs.html">Read the Docs</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+    
+
+<div class="text-box">
+    <h2>Getting Help</h2>
+    <p>- Join our <a href="https://discord.gg/pZhk8rMrz7">Support Server</a> incase you have faced any problems with the bot.<br>- Please take another look at the docs.</p>
+    <h2>Aliases and Syntaxes</h2>
+    <p>A syntax is the correct way you should use the bot,<br>e.g. .ban @Noob101 reason. Reasons are always optional, you cannot use IDs to ban members.<br>An alias is another way to execute a command: e.g. instead of .ban, you do .b. Commands that have a short name do not have an alias.</p>
+    <h2>Permissions</h2>
+    <p>Moderation and Server Management commands cannot be executed by a normal member. They are used to moderate communities.<br>Custom permissions cannot be set yet: a Dashboard is in progress.</p>
+    <h1>Invalid Syntax</h1>
+    <p>If nothing comes after you execute a command, you have used bad arguments.<br>Mostly, missing arguments are numbers or @username.</p>
+    <h1>Command Not Found</h1>
+    <p>Simple explanation, the command you executed doesn't exist.</p>
+    <h1>No Permissions</h1>
+    <p>You do not have the permissions to execute a command.</p>
+</div>
+
+</section>
+
+<!------JavaScript for the toggling------->
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+
+</script>
+
+</body>
+</html>
